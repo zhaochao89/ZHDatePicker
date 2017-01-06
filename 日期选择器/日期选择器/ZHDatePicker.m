@@ -37,8 +37,6 @@
         [self setupViews];
     }
     return self;
-    
-    
 }
 
 - (void)prapareData {
