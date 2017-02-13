@@ -20,6 +20,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     ZHDatePicker *datePicker = [[ZHDatePicker alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 200)];
+    datePicker.monthCount = 5;
+    [datePicker setSelectecBlock:^(NSString *dataStr) {
+        NSLog(@"确定选择：%@",dataStr);
+    }];
     [self.view addSubview:datePicker];
 }
 

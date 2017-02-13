@@ -11,5 +11,6 @@
 @interface ZHDatePicker : UIView
 
 @property (nonatomic, copy) void(^selectecBlock)(NSString *str);
+@property (nonatomic, assign) int monthCount;   //显示几个月的时间
 
 @end

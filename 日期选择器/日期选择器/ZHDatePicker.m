@@ -33,13 +33,13 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
-        [self prapareData];
+        [self prepareData];
         [self setupViews];
     }
     return self;
 }
 
-- (void)prapareData {
+- (void)prepareData {
     NSDate *now = [NSDate date];
     //得到当前月份
     self.nowYear = [[ZHCalender sharedInstance] getYearWithDate:now];
@@ -47,11 +47,11 @@
     self.nowDay = [[ZHCalender sharedInstance] getDayWithDate:now];
     //组装日期数组
     NSMutableArray *mdArray = [NSMutableArray array];
-    for (int i = -1; i < 2; i++) {
-        NSDateComponents *components = [[ZHCalender sharedInstance] getDateComponentsWithDate:now];
-        components.month += i;
+    NSDateComponents *components = [[ZHCalender sharedInstance] getDateComponentsWithDate:now];
+    for (int i = 0; i <= self.monthCount; i++) {
+        components.month = i;
         NSDate *date = [[ZHCalender sharedInstance] getDateWithComponents:components toDate:now];
-//        NSLog(@"%@",date);
+        NSLog(@"%@",date);
         NSUInteger month = [[ZHCalender sharedInstance] getMonthWithDate:date];
         
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -97,6 +97,12 @@
     self.pickerView.backgroundColor = [UIColor whiteColor];
     [self addSubview:self.pickerView];
     [self.pickerView selectedRowInComponent:0];
+}
+
+- (void)setMonthCount:(int)monthCount {
+    _monthCount = monthCount;
+    [self prepareData];
+    [self.pickerView reloadAllComponents];
 }
 
 
