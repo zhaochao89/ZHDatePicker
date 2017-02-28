@@ -122,7 +122,7 @@
         if (self.nowYear == year) {
             NSInteger month = [[str substringWithRange:NSMakeRange(5, 2)] integerValue];
             NSInteger day = [[str substringWithRange:NSMakeRange(8, 2)] integerValue];
-            if (self.nowMonth == month && self.nowDay + 1 == day) {
+            if ((self.nowMonth == month && self.nowDay + 1 == day) || (month = self.nowMonth + 1 && day == 1)) {
                 return @"明天";
             }
             return [str substringFromIndex:5];
