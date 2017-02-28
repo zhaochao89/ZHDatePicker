@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C081DCEEB432453D6FA66A16AFC420E229FF3AB7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4208310020EA52CB4410FF908395B51F8DBAB39A" : 9223372036854775807,
+    "C081DCEEB432453D6FA66A16AFC420E229FF3AB7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "356A962A-4D80-4A9D-BCAE-C56B734077CE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4208310020EA52CB4410FF908395B51F8DBAB39A" : "",
+    "C081DCEEB432453D6FA66A16AFC420E229FF3AB7" : "ZHDatePicker\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "日期选择器",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "日期选择器.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:zhaochao89\/AnimationGather.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4208310020EA52CB4410FF908395B51F8DBAB39A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:zhaochao89\/ZHDatePicker.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C081DCEEB432453D6FA66A16AFC420E229FF3AB7"
+    }
+  ]
+}
